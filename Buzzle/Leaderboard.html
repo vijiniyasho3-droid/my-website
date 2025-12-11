@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzle | Leaderboard</title>
+  <link rel="icon" href="public/assets/img/buzzle-icon.svg" />
+  <link rel="stylesheet" href="public/assets/css/leaderboard.css" />
+</head>
+
+<body>
+  <main class="leaderboard-wrapper">
+    <img src="public/assets/img/buzzle-icon.svg" class="buzzle-logo" alt="Buzzle Brain Icon" />
+    <h1>Buzzle</h1>
+    <p class="subtitle">Unlock Your Math Potential!</p>
+
+    <p class="section-title">Leaderboard</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Score</th>
+          <th>Difficulty</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardBody">
+        <tr>
+          <td colspan="4" class="empty-state">Loading...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button type="button" class="back-btn">Back to Menu</button>
+
+    <div class="avatar-badge">
+      <img src="public/assets/img/buzzle-icon.svg" alt="Avatar" />
+    </div>
+  </main>
+
+  <script src="public/assets/js/leaderboard.js" defer></script>
+</body>
+
+</html>
+

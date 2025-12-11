@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Buzzle brain icon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdd49a" />
+      <stop offset="100%" stop-color="#fbb4c4" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="#f2f2f2" stroke="#2f2f2f" stroke-width="4" />
+  <path d="M37 35c-6 0-11 5-11 11 0 2 1 4 2 6-4 3-6 7-6 12 0 6 4 12 10 14-1 2-2 4-2 6 0 7 6 13 13 13 3 0 6-1 8-3 2 6 8 10 15 10 6 0 11-3 14-8 2 1 4 1 6 1 10 0 19-9 19-19 0-7-4-13-10-16 1-2 2-4 2-7 0-10-8-18-18-18-3 0-6 1-9 2-3-5-8-8-14-8-6 0-11 3-14 7-2-3-5-5-9-5z" fill="url(#bg)" stroke="#2f2f2f" stroke-width="3" stroke-linejoin="round" />
+  <circle cx="48" cy="60" r="4" fill="#2f2f2f" />
+  <circle cx="72" cy="60" r="4" fill="#2f2f2f" />
+  <path d="M46 75c4 6 18 7 28 0" fill="none" stroke="#2f2f2f" stroke-width="3" stroke-linecap="round" />
+</svg>
+

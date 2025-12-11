@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzle | Game Over</title>
+  <link rel="icon" href="public/assets/img/buzzle-icon.svg" />
+  <link rel="stylesheet" href="public/assets/css/result.css" />
+</head>
+
+<body>
+  <main class="result-wrapper">
+    <div class="title-section">
+      <img src="public/assets/img/buzzle-icon.svg" class="buzzle-logo" alt="Buzzle Brain Icon" />
+      <h1>Buzzle</h1>
+      <p class="subtitle">Unlock Your Math Potential!</p>
+    </div>
+
+    <div class="result-card">
+      <h2 class="result-title">TIME'S UP!</h2>
+      <p class="result-subtitle">Your Result</p>
+
+      <div class="result-badge" id="resultBadge">
+        CORRECT!
+      </div>
+
+      <div class="result-stats">
+        <div class="stat-item">
+          <span class="stat-label">Score:</span>
+          <span class="stat-value" id="scoreValue">0 points</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Time Taken</span>
+          <span class="stat-value" id="timeValue">0s</span>
+        </div>
+        <div class="stat-item" id="puzzlesSolvedItem" style="display: none;">
+          <span class="stat-label">Puzzles Solved:</span>
+          <span class="stat-value" id="puzzlesSolvedValue">0</span>
+        </div>
+      </div>
+
+      <div class="result-actions">
+        <button class="action-btn play-again-btn" id="playAgainBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8v4l3 3"></path>
+          </svg>
+          <span>Play Again</span>
+        </button>
+        <button class="action-btn back-menu-btn" id="backMenuBtn">
+          <span>Back to Menu</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="public/assets/js/result.js" defer></script>
+</body>
+
+</html>
+

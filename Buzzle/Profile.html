@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzle | Profile</title>
+  <link rel="icon" href="public/assets/img/buzzle-icon.svg" />
+  <link rel="stylesheet" href="public/assets/css/profile.css" />
+</head>
+
+<body>
+  <main class="profile-wrapper">
+    <img src="public/assets/img/buzzle-icon.svg" class="buzzle-logo" alt="Buzzle Brain Icon" />
+    <h1>Buzzle</h1>
+    <p class="subtitle">Unlock Your Math Potential!</p>
+
+    <section class="profile-card">
+      <div class="avatar">
+        <img id="profileAvatar" src="public/assets/img/buzzle-icon.svg" alt="Profile Avatar" />
+      </div>
+
+      <div class="profile-info">
+        <h2>Profile</h2>
+        <p>Username: <span data-username>PlayerOne</span></p>
+        <p>Email: <span data-email>player.one@email.com</span></p>
+        <p>Difficulty: <span data-difficulty>Hard</span></p>
+      </div>
+
+      <div class="stats">
+        <h2>Game Statistics</h2>
+        <p>Games Played: <strong data-games-played>120</strong></p>
+        <p>Puzzles Solved: <strong data-puzzles-solved>95</strong></p>
+        <p>Average Score: <strong data-average-score>850 pts</strong></p>
+      </div>
+    </section>
+
+    <div class="button-row">
+      <button type="button" class="edit-btn">Edit Profile</button>
+      <button type="button" class="logout-btn">Log Out</button>
+    </div>
+
+    <a href="Home.html" class="menu-link">Back to Menu</a>
+    <p class="status-message" aria-live="polite"></p>
+  </main>
+
+  <script src="public/assets/js/profile.js" defer></script>
+</body>
+
+</html>
+

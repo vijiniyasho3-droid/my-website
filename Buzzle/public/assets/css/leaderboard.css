@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #87c5fb, #a8e6cf);
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --header-bg: #a598ff;
+  --text-dark: #1c1c1c;
+  --btn-bg: #d6ff6f;
+  --btn-text: #2f4020;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-dark);
+}
+
+.leaderboard-wrapper {
+  width: min(640px, 94vw);
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 3rem 2.5rem 2.25rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.buzzle-logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.08em;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+thead {
+  background: var(--header-bg);
+  color: #fff;
+}
+
+th,
+td {
+  padding: 0.95rem 0.5rem;
+  font-size: 0.95rem;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:hover {
+  background: rgba(165, 152, 255, 0.2);
+}
+
+.back-btn {
+  margin-top: 1.8rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 2.5rem;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(214, 255, 111, 0.4);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 25px rgba(214, 255, 111, 0.55);
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #ffd966;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-badge img {
+  width: 80%;
+  height: 80%;
+}
+
+.empty-state {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+@media (max-width: 520px) {
+  .leaderboard-wrapper {
+    padding: 2.2rem 1.4rem 2rem;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.85rem;
+  }
+}
+

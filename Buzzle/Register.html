@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzle | Register</title>
+  <link rel="icon" href="public/assets/img/buzzle-icon.svg" />
+  <link rel="stylesheet" href="public/assets/css/register.css" />
+</head>
+
+<body>
+  <main class="register-wrapper">
+    <img src="public/assets/img/buzzle-icon.svg" class="buzzle-logo" alt="Buzzle Brain Icon" />
+    <h1>Buzzle</h1>
+    <p class="subtitle">Unlock Your Math Potential!</p>
+
+    <form id="registerForm" novalidate>
+      <div class="form-field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username" required />
+      </div>
+      <div class="form-field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required />
+      </div>
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required minlength="6" />
+      </div>
+
+      <button type="submit" class="primary-btn">Register</button>
+    </form>
+
+    <a href="Login.html" class="alternate-link">Already have an account? Login</a>
+    <p class="status-message" aria-live="polite"></p>
+  </main>
+
+  <script src="public/assets/js/register.js" defer></script>
+</body>
+
+</html>
+

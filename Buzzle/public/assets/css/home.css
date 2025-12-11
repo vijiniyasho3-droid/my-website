@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #87c5fb, #a8e6cf);
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --text-dark: #1f1f1f;
+  --chip-easy: #4caf50;
+  --chip-medium: #7c6dff;
+  --chip-hard: #d04a4a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-gradient);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+}
+
+.home-wrapper {
+  width: min(520px, 92vw);
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2.75rem 2.25rem 2rem;
+  text-align: center;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.18);
+  position: relative;
+}
+
+.home-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.buzzle-logo {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.welcome {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.difficulty-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.difficulty-chip {
+  flex: 1 1 120px;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 0.75rem;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.difficulty-chip span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.difficulty-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 25px rgba(0, 0, 0, 0.2);
+}
+
+.difficulty-chip.easy {
+  background: var(--chip-easy);
+}
+
+.difficulty-chip.medium {
+  background: var(--chip-medium);
+}
+
+.difficulty-chip.hard {
+  background: var(--chip-hard);
+}
+
+.links-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.links-row a {
+  flex: 1 1 150px;
+  text-decoration: none;
+  background: #b6b6b6;
+  color: #2f2f2f;
+  font-weight: 600;
+  padding: 0.85rem 0;
+  border-radius: 999px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.links-row a:hover {
+  background: #8f8f8f;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .home-wrapper {
+    padding: 2.2rem 1.5rem 1.7rem;
+  }
+
+  .difficulty-row {
+    flex-direction: column;
+  }
+
+  .links-row {
+    flex-direction: column;
+  }
+}
+

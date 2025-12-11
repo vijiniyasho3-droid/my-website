@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzle | Home</title>
+  <link rel="icon" href="public/assets/img/buzzle-icon.svg" />
+  <link rel="stylesheet" href="public/assets/css/home.css" />
+</head>
+
+<body>
+  <main class="home-wrapper">
+    <img src="public/assets/img/buzzle-icon.svg" class="buzzle-logo" alt="Buzzle Brain Icon" />
+    <h1>Buzzle</h1>
+    <p class="subtitle">Unlock Your Math Potential!</p>
+
+    <p class="welcome">Welcome <span data-username>[Username]</span>!</p>
+
+    <section class="difficulty-row">
+      <button class="difficulty-chip easy" data-mode="easy">
+        Easy
+        <span>(60s/puzzle)</span>
+      </button>
+      <button class="difficulty-chip medium" data-mode="medium">
+        Medium
+        <span>(45s/puzzle)</span>
+      </button>
+      <button class="difficulty-chip hard" data-mode="hard">
+        Hard
+        <span>(30s/puzzle)</span>
+      </button>
+    </section>
+
+    <div class="links-row">
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="profile.html">Profile</a>
+    </div>
+  </main>
+
+  <script src="public/assets/js/home.js" defer></script>
+</body>
+
+</html>
+

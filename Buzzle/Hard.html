@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzle | Hard Mode</title>
+  <link rel="icon" href="public/assets/img/buzzle-icon.svg" />
+  <link rel="stylesheet" href="public/assets/css/hard.css" />
+</head>
+
+<body>
+  <main class="game-wrapper">
+    <!-- Header Section -->
+    <header class="game-header">
+      <div class="difficulty-badge">Difficulty: Hard</div>
+      <div class="time-container">
+        <div class="time-left">Time Left: <span id="timer">30</span>s</div>
+        <button class="exit-btn" id="exitBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+          </svg>
+          <span>Exit Game</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Title Section -->
+    <div class="title-section">
+      <img src="public/assets/img/buzzle-icon.svg" class="buzzle-logo" alt="Buzzle Brain Icon" />
+      <h1>Buzzle</h1>
+      <p class="subtitle">Unlock Your Math Potential!</p>
+    </div>
+
+    <!-- Puzzle Section -->
+    <section class="puzzle-section">
+      <div class="puzzle-header">
+        <span class="puzzle-label">Six Equations</span>
+        <span class="puzzle-source">www.sanfoh.com</span>
+      </div>
+      <div class="puzzle-container">
+        <div id="puzzleImage" class="puzzle-image">
+          <div class="loading">Loading puzzle...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Input Section -->
+    <section class="input-section">
+      <input type="text" id="answerInput" class="answer-input" placeholder="Enter Value" maxlength="10" />
+      <button id="submitBtn" class="submit-btn">Submit</button>
+    </section>
+
+    <!-- Message Display -->
+    <div id="message" class="message"></div>
+  </main>
+
+  <script src="public/assets/js/hard.js" defer></script>
+</body>
+
+</html>
+
